@@ -18,13 +18,13 @@ var nameFilter = function(filteredName, anonymousFunction) {
         let currentName = people[i].name
         if (currentName != filteredName) {
             results.push(currentName)
-        anonymousFunction()}
+        anonymousFunction(i)}
     }
 
     return results
 }
 
 var filteredNames = nameFilter("Betty", function(name) {
-    console.log("This Ran")
+    console.log("This Ran" + (name))
 })
 console.log(filteredNames)

@@ -16,7 +16,7 @@ var nameFilter = function(filteredName) {
     }
     return results
 }
-var selectName = function() {
+var currentName = function() {
     var currentName = "Betty";
     return currentName
 }

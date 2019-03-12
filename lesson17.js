@@ -27,7 +27,7 @@ var nameFilter = function(filteredName, anonymousFunction) {
     return results
 }
 
-var filteredNames = nameFilter("Betty", function(name) {
-    console.log("This Ran")
+var filteredNames = nameFilter("Betty", (name)=> {
+    console.log("This Ran" + name)
 })
 console.log(filteredNames)
